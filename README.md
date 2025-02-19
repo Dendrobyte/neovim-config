@@ -25,11 +25,11 @@ alias nvim_update_plugins="nvim --headless \"+Lazy! sync\" +qa
 
 I kind of have a personal tech stack (that I'll need to eventually put on my portfolio site as level of skill).
 
-Application: Golang
-Scripting: Lua
-Functional: Elixir (haven't used it for big projects yet though)
-Systems Level: Zig (haven't used it yet but it's on my list instead of C++. unless Jai comes out...)
-Frontend: JS (Vue, React)
+- Application: Golang
+- Scripting: Lua
+- Functional: Elixir (haven't used it for big projects yet though)
+- Systems Level: Zig (haven't used it yet but it's on my list instead of C++. unless Jai comes out...)
+- Frontend: JS (Vue, React)
 
 ## TODO
 
