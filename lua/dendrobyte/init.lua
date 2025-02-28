@@ -3,8 +3,10 @@ require("dendrobyte.remap")
 -- Set up some basic vim fields
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.opt["tabstop"] = 4
-vim.opt["shiftwidth"] = 4
+vim.o.expandtab = true
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+vim.o.softtabstop = 4
 
 -- Set up LSP stuff as per LSP Zero configuration
 
@@ -80,24 +82,11 @@ cmp.setup({
 -- End of LSP-Zero LSP setup --
 -- TODO: Move it into a lspsetup.lua or something in the /dendrobyte folder?
 
--- Setup harpoon stuff --
--- Once again, could also be moved to a different file... --
-local harpoon = require("harpoon")
-harpoon:setup()
+-- Set up for nvim-tree
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
 
-vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
-vim.keymap.set("n", "<leader>pm", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end) -- pm for preview menu?
-
--- Telescope hotkeys. Could move these too --
-local builtin = require('telescope.builtin')
--- Find files generally. Using 'p' for 'project'.
-vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = 'Telescope find files' })
--- Find files in git
-vim.keymap.set('n', '<leader>gf', builtin.git_files, { desc = 'Telescope find files within git' })
--- Search files function
-vim.keymap.set('n', '<leader>ps', function()
-	builtin.grep_string({ search = vim.fn.input("Grep > ") })
-end, { desc = 'Telescope project search files, per primeagen' })
+require("nvim-tree").setup()
 
 -- Set the vim theme
 -- vim.cmd("colorscheme nightfox")
