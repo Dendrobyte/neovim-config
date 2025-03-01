@@ -3,13 +3,21 @@
 I'm still kinda new to neovim, but liked my setup. Largely used Primeagen's zero to LSP video but used Lazy as a plugin manager. I used
 
 ```
+# Mac
 brew install neovim
+
+# Linux (I use Pop!_OS 24.04 LTS)
+sudo apt-get install neovim
 ```
 
 For Telescope, I used
 
 ```
+# Mac
 brew install ripgrep
+
+# Linux (I use Pop!_OS 24.04 LTS)
+sudo apt-get install neovim
 ```
 
 for better search finding. Just the two things I remember installing that need to be done outside of this configuration repository.
