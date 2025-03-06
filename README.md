@@ -29,6 +29,9 @@ I also have a bash command I use, my source being ~/.zshrc
 ```
 alias nvim_update_plugins="nvim --headless \"+Lazy! sync\" +qa
 ```
+
+Also- and mostly as a note to self- I have my key repeat settings set to the shortest/quickest possible.
+
 ## Tech Stack
 
 I kind of have a personal tech stack (that I'll need to eventually put on my portfolio site as level of skill).
