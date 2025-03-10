@@ -47,3 +47,5 @@ I kind of have a personal tech stack (that I'll need to eventually put on my por
 I want to organize the setups a little bit since each plugin more or less has its own lua file as per lazy vim configurations on their docs.
 
 Other than that, I'll also add more of the remaps to the remap lua file. Those will come as I find things that I need and use frequently as well.
+
+- [ ] Set up the debugging plugin (from the primeagen's repo I believe)
